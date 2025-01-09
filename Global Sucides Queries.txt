@@ -1,0 +1,41 @@
+Queries:
+--------------------------
+0)select year,sum(suicides_no) as total_suicides from suicide_data
+ group by year order by total_suicides;
+
+1)SELECT generation, avg(suicides_per_100k) AS avg_suicide_rate from suicide_data group by generation order by avg_suicide_rate desc;
+
+2) select age,sex,country,sum(suicides_no) as total_suicides from
+ suicide_data group by sex,age,country order by total_suicides;
+
+3)SELECT year, avg(suicides_per_100k) AS avg_suicide_rate from
+ suicide_data group by year order by avg_suicide_rate desc;
+
+4)SELECT sex,age,sum(suicides_no) as total_suicides,
+ avg(suicides_per_100k) AS avg_suicide_rate from suicide_data group by
+ sex,age order by avg_suicide_rate desc;
+
+5)SELECT sex,sum(suicides_no) as total_suicides,
+ avg(suicides_per_100k) AS avg_suicide_rate from suicide_data group by
+ sex order by avg_suicide_rate desc;
+
+ 6)SELECT age,sum(suicides_no) as total_suicides,
+ avg(suicides_per_100k) AS avg_suicide_rate from suicide_data group by
+ age order by avg_suicide_rate desc;
+
+ 7)SELECT sex, avg(suicides_per_100k) AS avg_suicide_rate from
+ suicide_data group by sex;
+
+ 8)select country,avg(suicides_per_100k) as avg_suicide_rate from
+ suicide_data group by country order by avg_suicide_rate desc;
+
+ 9)select sex,sum(suicides_no) as total_suicides from suicide_data
+ group by sex order by total_suicides;
+
+ 10)SELECT gdp_for_year, avg(suicides_per_100k) AS avg_suicide_rate
+ from suicide_data group by gdp_for_year order by gdp_for_year limit 10; 
+--------------------------------
+
+
+
+
